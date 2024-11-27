@@ -20,7 +20,7 @@ jobs:
         pip install Flask flake8 pytest
 
     - name: Lint with Flake8
-      run: flake8 my_venv\app.py
+      run: flake8 my_venv/app.py
 
     - name: Run unit tests
-      run: python my_venv\test_app.py
+      run: python my_venv/test_app.py
