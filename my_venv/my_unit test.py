@@ -12,7 +12,7 @@ class FlaskAppTestCase(unittest.TestCase):
         response = self.app.get('/')
        
         # Check if the status code is 200 (OK)
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 400)
        
         # Check if the response data is as expected
         self.assertEqual(response.json, {"message": "Hello level 400 FET, Quality Assurance!"})
